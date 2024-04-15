@@ -41,11 +41,11 @@
     "x-asena": "^1.0.1"
   },
   "scripts": {
-    "start": "pm2 start index.js --name x-asena"
+    "start": "pm2 start index.js --name xeno"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/X-Electra/X-Asena.git"
+    "url": "git+https://github.com/XENO-SIR/XENO-XD.git"
   },
   "keywords": [
     "bot",

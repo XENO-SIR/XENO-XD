@@ -1,6 +1,6 @@
 {
-  "name": "x-asena",
-  "version": "2.0.0",
+  "name": "xeno xd",
+  "version": "1.0.0",
   "description": "Whatsapp Bot",
   "main": "index.js",
   "directories": {
@@ -51,10 +51,10 @@
     "bot",
     "whatsapp"
   ],
-  "author": "Neeraj-x0",
+  "author": "xeno xd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/X-Electra/X-Asena/issues"
+    "url": "https://github.com/XENO-SIR/XENO-XD/issues"
   },
-  "homepage": "https://github.com/X-Electra/X-Asena#readme"
+  "homepage": "https://github.com/XENO-SIR/XENO-XD#readme"
 }

@@ -9,7 +9,7 @@ Xasena
 
 1. Get Session I'D.
     <br>
-<a href='https://ezra-web.onrender.com' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/get_session-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://replit.com/@xenosir1/XENO-XD-PAIR-CODE?v=1#index.js' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/get_session-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ***
 ### Deploy

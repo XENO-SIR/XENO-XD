@@ -1,49 +1,95 @@
 {
-  "nam{e": "XENO-XD",
-  "description": "XENO-XD Multi Device whatsapp bot",
-  "logo": "https://telegra.ph/file/8d797992e6a9409933796.jpg",
-  "keywords": ["whatsapp"],
-  "repository": "https://github.com/XENO-SIR-X0/X-Asena-test",
-  "website": "https://github.com/XENO-SIR-X0/X-Asena-test",
-  "success_url": "https://github.com/XENO-SIR-X0/X-Asena-test",
+  "name": "XENO XD",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/XENO-SIR/XENO-XD",
+  "logo": "https://telegra.ph/file/e0bc28185977299bf5d2c.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "stack": "container",
-  "env": {
-    "ANTI_LINK": {
-      "description": "true/false",
-      "required": false
+  "addons": [{
+  "plan": "heroku-postgresql"
+    }],
+    "env": {
+      "HEROKU_APP_NAME": {
+        "description": "Heroku app name, same as above entered",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Heroku account api key, https://dashboard.heroku.com/account",
+        "required": true
+      },
+		"SESSION_ID": {
+			"description": "Add your session id heren which you got after scanning the QR",
+			"required": false,
+			"value": ""
+		},
+               "ALIVE_MESSAGE": {
+			"description": "Add a message here which you want to see when typing .alive",
+			"required": true,
+			"value": "XENO XD WA BOT IS ALIVE🗿🗿"
+		},
+		"OWNER_NAME": {
+			"description": "Add the owner name here and if you want to use the default name then just leave it)",
+			"required": false,
+			"value": "XENO SIR"
+		},
+		"OWNER_NUMBER": {
+			"description": "Add the owner number here",
+			"required": true,
+			"value": ""
+		},
+		"Caption": {
+			"description": "Add the owner location here and if you want to use the default name then just leave it",
+			"required": false,
+			"value": "XENO XD!"
+		},
+		"WELCOME": {
+			"description": "Type true if you want to enable welcome by default",
+			"required": false,
+			"value": "false"
+		},
+		"BOT_NAME": {
+			"description": "Change the bot name here",
+			"required": true,
+			"value": "XENO XD"
+		},
+		"WATERMARK": {
+			"description": "Add your watermark here",
+			"required": true,
+			"value": "XENO XD by XENO SIR"
+		},
+		"STICKER_PACK_NAME": {
+			"description": "Add sticker pack name here",
+			"required": true,
+			"value": "XENO SIR"
+		},
+		"STICKER_AUTHOR_NAME": {
+			"description": "Add sticker pack author name here",
+			"required": true,
+			"value": "XENO SIR"
+		},
+		"REACT_EMOJI": {
+			"description": "Add any emoji here.",
+			"required": true,
+			"value": "🗿"
+		},
+                "LOGO": {
+			"description": "Add any emoji here.",
+			"required": true,
+			"value": "https://telegra.ph/file/c9fed4e07198068a2ce53.jpg"
+		},
+               "VIDEOURL": {
+			"description": "Add a video url for gif menu and video menu",
+			"required": true,
+                        "value": "https://telegra.ph/file/c9fed4e07198068a2ce53.jpg"
+				
+		}
+	},
+	"buildpacks": [
+    {
+      "url": "heroku/nodejs"
     },
-    "ANTILINK_ACTION": {
-      "description": "kick",
-      "required": false
-    },
-    "SESSION_ID": {
-      "description": "XENO-XD session id",
-      "required": true
-    },
-    "LOGS": {
-      "description": "need to show message logs ?",
-      "required": false
-     },
-     "HANDLERS": {
-       "description": "Enter Your Prefix",
-       "required": "true",
-       "value": "#"
-     },
-    "PACKNAME": {
-     "description": "Enter Your packname",
-      "required": "true",
-      "value": "XENO-XD;XENO SIR"
-    },
-    "OWNER_NAME": {
-      "description": "Enter Owner Name",
-       "required": "true",
-       "value": "XENO SIR"
-    },
-    "WORK_TYPE": {
-    "description": "private or public",
-      "required": "true",
-      "value": "public"
-       }
+		 {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
+    ]
 }
-    
